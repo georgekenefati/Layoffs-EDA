@@ -106,6 +106,9 @@ FROM layoffs_staging2
 
 -- 2. Standardize column values
 
+SELECT company, TRIM(company)
+FROM layoffs_staging2
+;
 -- 3. Fix null or blank values
 
 -- 4. Remove extra columns
